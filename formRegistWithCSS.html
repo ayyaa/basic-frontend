@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Registrasi</title>
+	<style>
+	.button {
+	    background-color: #02f744;
+	    border: 1px outset #1d512b;
+	    color: white;
+	    text-align: center;
+	    font-size: 12px;
+	    cursor: pointer;
+	    float: right;
+	    height: 28px;
+	    margin : 10px;
+	}
+	#FormLayout{
+		font-family: courier;
+		font-size: 12pt;
+		margin-top: 10px;
+		background-color: #42f498;
+		border: solid 2px #404f44;
+		padding: 10px;
+		width: 350px;
+		height: 270px;
+		padding-top: 10px;
+	}
+
+	#FormLayout label {
+		display: inline-block;
+		float: left;
+		margin-bottom: 10px;
+		padding-right: 20px;
+		width: 130px;
+		margin-top: 5px;
+
+	}
+	#FormLayout input, #FormLayout textarea{
+		display: inline-block;
+		float: left;
+		margin-left: 10px;
+		width: 100px;
+		margin-top: 5px;
+
+	}
+
+	#FormLayout h1{
+	 	text-align: center;
+	 }
+
+	#FormLayout br{
+	 	clear: left;
+	 }
+
+	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="FormLayout">
+		<h1> Form Registrasi </h1>
+		<form action="#">
+			<label>Nama</label>
+            <input type="text" name="nama">
+            <br>
+            
+			<label>Jenis Kelamin</label>
+            <input type="radio" name="gender" value="male" checked >Male
+			<input type="radio" name="gender" value="female" >Female
+            <br>
+            
+			<label>Tanggal Lahir</label>
+            <input type="date" name="tgl_lhr">
+            <br>
+            
+			<label>Alamat</label>
+            <textarea name="alamat"></textarea>
+            <br>
+            
+			<button class="button">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
